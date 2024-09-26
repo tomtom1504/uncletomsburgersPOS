@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant POS System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="https://ideogram.ai/assets/image/lossless/response/QSpQuRmYT7q77J3KkSlJJw" alt="Restaurant Logo">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">POS</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Left Sidebar: Category Buttons -->
+        <aside class="sidebar-left">
+            <nav>
+                <ul id="category-list">
+                    <!-- Categories will be loaded here dynamically -->
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area: Menu Items -->
+        <main class="main-content">
+            <h2 id="category-title">Please select a category</h2>
+            <div class="items" id="menu-items">
+                <!-- Menu items will be displayed here dynamically -->
+            </div>
+        </main>
+
+        <!-- Right Sidebar: Order Summary -->
+        <aside class="sidebar-right">
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <ul id="order-items"></ul>
+                <p>Total: €<span id="total-price">0.00</span></p>
+                <button id="proceed-payment">Proceed to Payment</button>
+            </div>
+        </aside>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

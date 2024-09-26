@@ -1,0 +1,361 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+header .logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+header .main-nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+header .main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .main-nav ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+header .main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header .main-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    height: calc(100vh - 80px); /* Full height minus header */
+}
+
+.sidebar-left, .sidebar-right {
+    width: 20%;
+    background-color: #ecf0f1;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.sidebar-left {
+    border-right: 1px solid #bdc3c7;
+}
+
+.sidebar-right {
+    border-left: 1px solid #bdc3c7;
+}
+
+.sidebar-left nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-left nav ul li {
+    margin-bottom: 10px;
+}
+
+.category-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #3498db; /* Default color, can be changed */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.category-button:hover {
+    background-color: #2980b9;
+}
+
+.main-content {
+    width: 60%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.main-content h2 {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-item {
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #bdc3c7;
+    margin: 10px;
+    padding: 20px;
+    width: 40%;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-item:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.sidebar-right {
+    background-color: #ecf0f1;
+}
+
+.order-summary {
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    position: relative;
+    border-radius: 5px;
+}
+
+.order-summary h2 {
+    margin-top: 0;
+    text-align: center;
+    font-weight: 500;
+}
+
+#order-items {
+    list-style-type: none;
+    padding: 0;
+    max-height: 60%;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+#order-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+#order-items li button {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+#order-items li button:hover {
+    background-color: #c0392b;
+}
+
+.quantity-rocker {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.quantity-rocker button {
+    background-color: #bdc3c7;
+    border: none;
+    color: #2c3e50;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.quantity-rocker button:hover {
+    background-color: #95a5a6;
+}
+
+.quantity-rocker .quantity-display {
+    margin: 0 5px;
+    font-size: 16px;
+    min-width: 20px;
+    text-align: center;
+}
+
+.order-summary p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#proceed-payment {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#proceed-payment:hover {
+    background-color: #27ae60;
+}
+
+/* Settings Page Styles */
+.settings-content {
+    padding: 20px;
+}
+
+.settings-content h2 {
+    text-align: center;
+    font-weight: 500;
+}
+
+.settings-section {
+    margin-bottom: 30px;
+}
+
+.settings-section h3 {
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#category-color-settings, #menu-settings {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.category-color-item, .menu-item-setting {
+    margin-bottom: 15px;
+}
+
+.category-color-item label, .menu-item-setting label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.category-color-item input[type="color"], .menu-item-setting input[type="text"], .menu-item-setting input[type="number"] {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.menu-item-setting {
+    border-bottom: 1px solid #bdc3c7;
+    padding-bottom: 10px;
+}
+
+.menu-item-setting:last-child {
+    border-bottom: none;
+}
+
+.menu-item-setting .setting-buttons {
+    margin-top: 10px;
+}
+
+.menu-item-setting .setting-buttons button {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.menu-item-setting .setting-buttons button.delete-btn {
+    background-color: #e74c3c;
+}
+
+.menu-item-setting .setting-buttons button:hover {
+    opacity: 0.9;
+}
+
+#add-category-btn, .add-menu-item-btn {
+    background-color: #2ecc71;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#add-category-btn:hover, .add-menu-item-btn:hover {
+    background-color: #27ae60;
+}
+
+/* Scrollbars */
+.sidebar-left, .main-content, .sidebar-right {
+    overflow-y: auto;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+    .sidebar-left, .sidebar-right, .main-content {
+        width: 100%;
+        height: auto;
+    }
+    #proceed-payment {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin-top: 20px;
+    }
+    header .main-nav {
+        position: static;
+        margin-top: 10px;
+    }
+    header .main-nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
